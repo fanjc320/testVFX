@@ -1,12 +1,14 @@
 Shader "stencilGreen1" {
     SubShader {
-        Tags { "RenderType"="Opaque" "Queue"="Geometry+1"}
+        //Tags { "RenderType"="Opaque" "Queue"="Geometry+1"}// ok too
+        //Tags { "RenderType"="Opaque" "Queue"="Geometry+2"}//ok
+        Tags { "RenderType"="Opaque" "Queue"="Transparent+2"}
         Pass {
             Stencil {
-                Ref 2
-                Comp equal
-                Pass keep 
-                ZFail decrWrap
+                //Ref 2
+                //Comp equal
+                //Pass keep 
+                //ZFail decrWrap
             }
         
             CGPROGRAM

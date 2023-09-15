@@ -1,6 +1,7 @@
 Shader "stencilRed1" {
     SubShader {
-        Tags { "RenderType"="Opaque" "Queue"="Geometry"}
+        //Tags { "RenderType"="Opaque" "Queue"="Geometry"}
+        Tags { "RenderType"="Opaque" "Queue"="Transparent"}
         Pass {
             Stencil {
                 Ref 2
